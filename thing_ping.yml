@@ -1,0 +1,8 @@
+----
+
+hosts: all
+gather_facts: false
+
+tasks:
+  net_ping:
+    dest: 10.32.15.1
