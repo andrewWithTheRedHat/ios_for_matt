@@ -4,6 +4,5 @@ hosts: all
 gather_facts: false
 
 tasks:
-  - name: ping that thing
-    net_ping:
-      dest: 10.32.15.1
+  - name: showver
+    shell: show ver
