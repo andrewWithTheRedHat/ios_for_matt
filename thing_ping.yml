@@ -4,5 +4,6 @@ hosts: all
 gather_facts: false
 
 tasks:
-  net_ping:
-    dest: 10.32.15.1
+  - name: ping that thing
+    net_ping:
+      dest: 10.32.15.1
