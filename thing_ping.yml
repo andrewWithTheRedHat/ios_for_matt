@@ -4,5 +4,6 @@ hosts: all
 gather_facts: false
 
 tasks:
-  - name: showver
-    shell: show ver
+  - name: Test reachability
+  cisco.ios.ios_ping:
+    dest: 10.32.15.1
