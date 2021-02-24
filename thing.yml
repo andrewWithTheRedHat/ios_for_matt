@@ -1,0 +1,8 @@
+----
+
+hosts: all
+gather_facts: false
+
+tasks:
+  cisco.ios.ios_facts:
+    gather_subset: all
