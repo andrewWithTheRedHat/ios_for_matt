@@ -5,5 +5,5 @@ gather_facts: false
 
 tasks:
   - name: Test reachability
-  cisco.ios.ios_ping:
-    dest: 10.32.15.1
+    cisco.ios.ios_ping:
+      dest: 10.32.15.1
