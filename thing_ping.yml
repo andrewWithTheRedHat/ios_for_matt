@@ -1,8 +1,9 @@
 ---
+- name: ping some stuff
+  hosts: all
+  gather_facts: false
 
-hosts: all
-
-tasks:
-  - name: Test reachability
-    cisco.ios.ios_ping:
-      dest: 10.32.15.1
+  tasks:
+    - name: Test reachability
+      cisco.ios.ios_ping:
+        dest: 8.8.8.8
